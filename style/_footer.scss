@@ -1,0 +1,47 @@
+/** @format */
+$GrayishBlue: hsla(216, 30%, 68%, 0.1);
+$DarkGrayishViolet: hsl(273, 4%, 51%);
+footer {
+     background-color: $GrayishBlue;
+     text-align: center;
+     .footer-icons {
+          background: url('/images/bg-pattern-footer-mobile.svg') no-repeat top
+               left;
+          padding-top: 6rem;
+          img[alt='logo'] {
+               display: block;
+               margin: auto;
+          }
+          img {
+               margin: 0.8rem;
+          }
+          div {
+               margin: auto;
+               padding: 1rem 0;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+          }
+          &::after {
+               content: '';
+               border-bottom: 2px solid;
+               display: block;
+               width: 90%;
+               margin: auto;
+               opacity: 0.2;
+          }
+     }
+     .dark {
+          color: $DarkGrayishViolet;
+          text-transform: uppercase;
+          padding: 2rem 0;
+     }
+     p {
+          padding: 0.3rem 0;
+          font-weight: 700;
+          text-transform: uppercase;
+     }
+     & p:last-child {
+          padding-bottom: 3rem;
+     }
+}

@@ -1,0 +1,71 @@
+/** @format */
+$VeryLightGray: hsl(0, 0%, 98%);
+$DarkViolet: hsl(256, 26%, 20%);
+
+@mixin flex {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+}
+.sec-2 {
+     @include flex();
+     h1 {
+          margin: 7rem 0 0 0;
+          font-size: 2.5rem;
+          letter-spacing: 2px;
+          &::before {
+               content: '';
+               border-top: 2px solid;
+               display: block;
+               width: 60%;
+               margin: auto;
+               padding-bottom: 2rem;
+               opacity: 0.2;
+          }
+     }
+     .sec-2-child:last-child {
+          margin-bottom: 4rem;
+     }
+     .sec-2-child {
+          @include flex();
+          margin: 4rem 0 0 0;
+
+          img {
+               margin-bottom: 2rem;
+          }
+          h2 {
+               margin-bottom: 1rem;
+          }
+          p {
+               text-align: center;
+               padding: 0 1rem;
+               letter-spacing: 1px;
+               font-size: 1.1rem;
+          }
+     }
+}
+.sec-2-part-2 {
+     width: 90%;
+     margin: 4rem auto 7rem auto;
+     font-weight: 700;
+     text-align: center;
+     color: $VeryLightGray;
+     background: $DarkViolet url('/images/bg-pattern-how-we-work-mobile.svg')
+          top right no-repeat;
+     h1 {
+          padding: 3rem 2rem 2rem 2rem;
+          font-size: 2.5rem;
+          font-weight: 400;
+          line-height: 1.2;
+     }
+     #how-btn {
+          padding: 0.9rem 2rem;
+          color: $VeryLightGray;
+          border: 2px solid $VeryLightGray;
+          background: none;
+          text-transform: uppercase;
+          margin-bottom: 4rem;
+          letter-spacing: 1px;
+     }
+}

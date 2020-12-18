@@ -1,0 +1,90 @@
+/** @format */
+@import './sec-1';
+@import './sec-2';
+@import './footer';
+@import './desktop';
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+$VeryDarkViolet: hsl(270, 9%, 17%);
+$DarkViolet: hsl(256, 26%, 20%);
+$VeryLightGray: hsl(0, 0%, 98%);
+
+*,
+*::before,
+*::after {
+     padding: 0;
+     margin: 0;
+}
+
+h1,
+h2,
+h3 {
+     font-family: 'DM Serif Display', serif;
+}
+
+body {
+     font-family: 'Karla', sans-serif;
+     font-size: 1rem;
+
+     // nav bar
+     header {
+          position: fixed;
+          width: 100%;
+          background-color: $VeryLightGray;
+
+          div {
+               padding: 1rem;
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+
+               img[alt='close'] {
+                    display: none;
+                    cursor: pointer;
+               }
+
+               img[alt='hamburger'] {
+                    cursor: pointer;
+               }
+          }
+
+          nav {
+               display: none;
+               background-color: $VeryDarkViolet;
+
+               #list {
+                    list-style: none;
+                    padding: 1rem 0;
+                    width: 100%;
+                    color: $VeryLightGray;
+                    text-transform: uppercase;
+                    padding-bottom: 16rem;
+                    background: url('/images/bg-pattern-mobile-nav.svg')
+                         no-repeat bottom / contain padding-box;
+                    & li:last-child a {
+                         border: 1px solid;
+                         width: 80%;
+                         margin: auto;
+                         transform: translateX(-1%);
+                         padding: 0.8rem 4rem;
+                    }
+
+                    li {
+                         margin: 2rem 0;
+                         width: 100%;
+                         text-align: center;
+                         font-weight: 700;
+                         a {
+                              text-decoration: none;
+                              color: $VeryLightGray;
+                         }
+                    }
+               }
+          }
+     }
+}
+// when event occur for nav list
+.display {
+     display: block;
+}

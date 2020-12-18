@@ -1,0 +1,43 @@
+/** @format */
+$DarkViolet: hsl(256, 26%, 20%);
+$VeryLightGray: hsl(0, 0%, 98%);
+
+.sec-1 {
+     color: $VeryLightGray;
+     background-color: $DarkViolet;
+     #intro-image {
+          width: 100%;
+     }
+     .sec-1-child {
+          padding: 1rem;
+          background: url('/images/bg-pattern-intro-left-mobile.svg') top left
+                    no-repeat,
+               url('/images/bg-pattern-intro-right-mobile.svg') 100% 200%
+                    no-repeat;
+          text-align: center;
+
+          h1 {
+               padding: 5.5rem 1rem 1rem 1rem;
+               font-size: 2.8rem;
+               font-weight: 400;
+               letter-spacing: 2px;
+               line-height: 1;
+          }
+          p {
+               padding: 0 1rem 1rem 1rem;
+               line-height: 2;
+               font-size: 0.85rem;
+               letter-spacing: 2px;
+          }
+     }
+     #view-btn {
+          text-transform: uppercase;
+          background: none;
+          color: $VeryLightGray;
+          border: 1px solid $VeryLightGray;
+          padding: 0.8rem 2rem;
+          font-size: 0.7rem;
+          letter-spacing: 2px;
+          margin: 0 0 5rem 0;
+     }
+}
